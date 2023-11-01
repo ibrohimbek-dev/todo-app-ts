@@ -1,0 +1,172 @@
+.todo {
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	height: auto;
+	margin: 100px auto;
+	padding: 20px;
+	border: 1px solid var(--border);
+	border-radius: 8px;
+}
+
+.title {
+	text-align: center;
+	color: var(--black);
+}
+
+.button {
+	padding: 8px 16px;
+	color: var(--black);
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	transition: all 0.5s;
+	box-shadow: none;
+	width: 200px;
+	border: 1px solid var(--border);
+}
+
+/* Add a shadow on hover for the button element */
+.button:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.button:active {
+	transform: translateY(-6px);
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btnEffect {
+	transform: translateY(-6px);
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	font-size: 18px;
+	border: 1px solid var(--border);
+  color: #660e60;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Add a custom focus style to the input element */
+input:focus {  
+  box-shadow: 0 0 10px 2px rgba(160, 196, 255, 0.7); /* Add a shadow with blur */
+}
+
+
+.input::placeholder {
+  color: #a3b7ca; /* Change the color to your preferred placeholder color */
+  font-style: italic;
+  font-size: 16px;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+}
+
+.card {
+	margin-top: 20px;
+}
+
+.cardItem {
+	padding: 10px 8px 6px 8px;
+	border: 1px solid #7593af;
+	margin-top: 10px;
+	border-radius: 8px;
+	transition: all 0.5s;
+	box-shadow: none;
+}
+
+.cardItemTitleContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cardItemTitle {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #6c584c;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.cardItemTime {
+	margin-top: 15px;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.cardItemTime div {
+	margin-right: 5px;
+}
+
+.cardItemTime div:hover {
+	color: #666b5e;
+}
+
+.cardItem:hover {
+	cursor: pointer;
+	background-color: #f3d0a4;
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+	transform: translateY(-6px);
+}
+
+.cardItemDel {
+	width: 20px;
+	height: 20px;
+	transition: all 0.5s;
+}
+
+.cardItemDel:hover {
+	transform: scale(1.4);
+	color: white;
+}
+
+.btnContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.btnContainer img {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	transition: all 0.5s;
+}
+
+.btnContainer img:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .todo {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .cardItemTitle {
+    font-size: 16px;
+  }
+}
